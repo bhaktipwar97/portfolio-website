@@ -1,0 +1,94 @@
+#about{
+  min-height:100vh;
+  /* background:#0f172a; */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:80px 8%;
+  color:white;
+}
+
+.about-wrapper{
+  width:100%;
+  max-width:1200px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:80px;
+
+}
+
+/* Text Side */
+.about-text{
+  flex:1;
+}
+
+.about-text h1{
+  font-size:45px;
+  color:#00f7ff;
+  margin-bottom:25px;
+}
+
+.about-desc{
+  line-height:1.8;
+  color:#cbd5e1;
+  margin-bottom:40px;
+  max-width:500px;
+}
+
+/* Social Buttons */
+.social{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.icon-box{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 18px;
+  background:#1e293b;
+  border-radius:30px;
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+.icon-box img{
+  width:20px;
+  height:20px;
+}
+
+.icon-box:hover{
+  background:#00f7ff;
+  color:black;
+  transform:translateY(-5px);
+}
+
+/* Photo */
+.about-photo{
+  flex:1;
+  height:400px;
+  max-width:400px;
+  border-radius:20px;
+  background:url("/images/fotos.png") no-repeat center/cover;
+  box-shadow:0 0 40px #00f7ff;
+}
+
+/* Responsive */
+@media(max-width:900px){
+  .about-wrapper{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .about-photo{
+    height:300px;
+    width:300px;
+  }
+
+  .social{
+    justify-content:center;
+  }
+}

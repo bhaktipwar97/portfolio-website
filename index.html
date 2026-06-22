@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- Boxicons CDN -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- Existing CSS -->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="contct.css" />
+    <link rel="stylesheet" href="skill.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <style>
+      html {
+        scroll-behavior: smooth; /* smooth scrolling */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <header>  -->
+    <!-- Google Font -->
+
+    <!-- Navbar -->
+    <div class="animated-bg">
+      <header class="logo">
+        <a href="#" class="brand">BHAKTI</a>
+
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+
+        <nav class="nav" id="nav">
+          <a href="#home">HOME</a>
+          <a href="#about">ABOUT</a>
+          <a href="#skills">SKILLS</a>
+          <a href="#project">PROJECTS</a>
+          <a href="#contact">CONTACT</a>
+        </nav>
+      </header>
+
+      <script>
+        const toggle = document.getElementById("menu-toggle");
+        const nav = document.getElementById("nav");
+
+        toggle.addEventListener("click", () => {
+          nav.classList.toggle("active");
+        });
+      </script>
+
+      <!-- Home Section -->
+
+      <section id="home">
+        <div class="hero-container">
+          <div class="hero-left">
+            <h4>Hello, It's Me</h4>
+            <h1>BHAKTI PAWAR</h1>
+            <h3>Full Stack Developer</h3>
+
+            <p>
+              I build modern, scalable and high-performance web applications
+              using HTML, CSS, JavaScript, React and powerful backend
+              technologies.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="" class="btn primary">Download Resume</a>
+              <a href="#project" class="btn secondary">View Projects</a>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <div class="image-wrapper">
+              <img src="/images/fotos.png" alt="Bhakti" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+
+      <section id="about">
+        <div class="about-wrapper">
+          <div class="about-text">
+            <h1>About Me</h1>
+
+            <p class="about-desc">
+              Hi 👋 I am Bhakti, a passionate Full Stack Developer. I love
+              building modern, responsive and user-friendly web applications.
+              Currently improving my skills in MERN stack and scalable backend
+              systems.
+            </p>
+
+            <div class="social">
+              <a
+                href="https://www.linkedin.com/in/bhakti-pawar-1651b5417?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                class="icon-box"
+                target="_blank"
+              >
+                <img src="svg/linkedin.svg" alt="LinkedIn" />
+                <span>LinkedIn</span>
+              </a>
+
+              <a
+                href="https://github.com/bhaktipwar97"
+                class="icon-box"
+                target="_blank"
+              >
+                <img src="svg/github.svg" alt="GitHub" />
+                <span>GitHub</span>
+              </a>
+
+              <a
+                href="https://leetcode.com/u/bhaktipwar97/"
+                class="icon-box"
+                target="_blank"
+              >
+                <img src="svg/leetcode.svg" alt="LeetCode" />
+                <span>LeetCode</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="about-photo"></div>
+        </div>
+      </section>
+
+      <!-- skills -->
+      <section id="skills">
+        <div class="projects-wrapper">
+          <div class="skills-box">
+            <h2 class="skills-title">My Skills</h2>
+
+            <div class="skills-icons">
+              <!-- Frontend -->
+              <div class="skill-icon">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                />
+                <span>HTML</span>
+              </div>
+
+              <div class="skill-icon">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                />
+                <span>CSS</span>
+              </div>
+
+              <div class="skill-icon">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                />
+                <span>JavaScript</span>
+              </div>
+
+              <div class="skill-icon">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                />
+                <span>React</span>
+              </div>
+
+              <!-- Backend -->
+              <div class="skill-icon">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                />
+                <span>Node.js</span>
+              </div>
+
+              <div class="skill-icon">
+                <img
+                  src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg"
+                />
+                <span>Express.js</span>
+              </div>
+
+              <div class="skill-icon">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                />
+                <span>MongoDB</span>
+              </div>
+
+              <div class="skill-icon">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                />
+                <span>Docker</span>
+              </div>
+
+              <div class="skill-icon">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                />
+                <span>Git</span>
+              </div>
+
+              <div class="skill-icon">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                />
+                <span>GitHub</span>
+              </div>
+
+              <div class="skill-icon">
+                <img
+                  src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+                />
+                <span>Postman</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- projects -->
+      <section id="project">
+        <div class="projects-wrapper">
+          <h1 class="section-title">Featured Projects</h1>
+
+          <!-- 3️⃣ e-commerce website-->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="/images/image copy 3.png"
+                alt="E-Commerce Web Application"
+              />
+            </div>
+
+            <div class="project-content">
+              <h2>E-Commerce Web Application</h2>
+              <p>
+                Developed a full-stack E-Commerce web application using MERN
+                stack. Implemented product search, filter, wishlist, cart,
+                checkout and product management features.
+              </p>
+
+              <div class="tech-stack">
+                <span>React</span>
+                <span>Node</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+              </div>
+
+              <div class="project-buttons">
+                <a
+                  href="https://e-commerceweb-3-5nqg.onrender.com"
+                  class="btn live"
+                  target="_blank"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/bhaktipwar97/E-commerceWeb"
+                  class="btn code"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 2️⃣ Airbnb Clone -->
+          <div class="project-card reverse">
+            <div class="project-image">
+              <img src="/images/image copy 2.png" alt="Airbnb Clone" />
+            </div>
+
+            <div class="project-content">
+              <h2>Airbnb Clone</h2>
+              <p>
+                Built a full-stack Airbnb clone using HTML, CSS, JavaScript,
+                Node.js and Express.js. Implemented property listing management,
+                map integration and review features. Users can add, edit and
+                delete property listings with a responsive user interface.
+              </p>
+
+              <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Node.js</span>
+                <span>Express.js</span>
+              </div>
+              <div class="project-buttons">
+                <a
+                  href="https://projets-5.onrender.com"
+                  class="btn live"
+                  target="_blank"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/bhaktipwar97/projets"
+                  class="btn code"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 1️⃣ LinkedIn Clone -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/images/image copy.png" alt="LinkedIn Clone" />
+            </div>
+
+            <div class="project-content">
+              <h2>LinkedIn Clone</h2>
+              <p>
+                Developed a LinkedIn-inspired social networking platform with
+                features like user registration, login, profile editing, post
+                creation, likes/comments, and connection requests. Focused on
+                building a responsive and user-friendly interface for an
+                engaging social networking experience.
+              </p>
+
+              <div class="tech-stack">
+                <span>React</span>
+                <span>Node</span>
+                <span>MongoDB</span>
+              </div>
+
+              <div class="project-buttons">
+                <a
+                  href="https://linkden-clone-gamma.vercel.app"
+                  class="btn live"
+                  target="_blank"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/bhaktipwar97/Linkden-clone"
+                  class="btn code"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section id="contact">
+        <div class="contact-wrapper">
+          <h1 class="contact-title">Contact Me</h1>
+          <p class="contact-subtitle">
+            Let’s build something amazing together 🚀
+          </p>
+
+          <div class="contact-container">
+            <!-- LEFT INFO -->
+            <div class="contact-info">
+              <h2>Get In Touch</h2>
+              <p>
+                I am open to freelance projects, internships and full-time
+                roles. Feel free to send me a message.
+              </p>
+
+              <div class="info-box">
+                <span>Email:</span>
+                <p>pawarbhakti41@gmail.com</p>
+              </div>
+
+              <div class="info-box">
+                <span>Location:</span>
+                <p>Pune, India (Open to Remote)</p>
+              </div>
+            </div>
+
+            <!-- RIGHT FORM -->
+            <form class="contact-form" id="contact-form">
+              <div class="input-group">
+                <input type="text" name="name" required />
+                <label>Your Name</label>
+              </div>
+
+              <div class="input-group">
+                <input type="email" name="email" required />
+                <label>Your Email</label>
+              </div>
+
+              <div class="input-group">
+                <textarea name="message" required></textarea>
+                <label>Your Message</label>
+              </div>
+
+              <button type="submit" class="send-btn">Send Message</button>
+
+              <p id="form-status"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+      <hr />
+      <!-- footer -->
+      <!-- ===== UNIQUE FOOTER ===== -->
+      <footer class="footer">
+        <div class="footer-wrapper">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <h2>BHAKTI</h2>
+          </div>
+
+          <!-- Socials -->
+          <div class="footer-socials">
+            <a
+              href="https://www.linkedin.com/in/bhakti-pawar-1651b5417?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              class="social-icon"
+            >
+              <img src="svg/linkedin.svg" alt="LinkedIn" />
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/bhaktipwar97" class="social-icon">
+              <img src="svg/github.svg" alt="GitHub" />
+              <span>GitHub</span>
+            </a>
+            <a href="https://leetcode.com/u/bhaktipwar97/" class="social-icon">
+              <img src="svg/leetcode.svg" alt="LeetCode" />
+              <span>LeetCode</span>
+            </a>
+          </div>
+
+          <!-- Footer Links -->
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+          <!-- Copy -->
+          <div class="footer-copy">
+            &copy; 2026 Bhakti Pawar. All rights reserved.
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

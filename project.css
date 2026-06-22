@@ -1,0 +1,292 @@
+
+/* ================= PROJECT SECTION ================= */
+
+#project {
+  width: 100%;
+  padding: 100px 6%;
+  /* background: #0f172a; */
+  color: white;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 80px;
+  color: #00f2ff;
+}
+
+.projects-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ================= CARD ================= */
+
+.project-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 100px;
+}
+
+.project-card.reverse {
+  flex-direction: row-reverse;
+}
+
+/* ================= IMAGE FIX ================= */
+
+.project-image {
+  flex: 1;
+  height: 320px;
+  border-radius: 15px;
+  overflow: hidden; /* important */
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* stretch nahi honar */
+  display: block;
+  transition: 0.4s ease;
+}
+
+/* Hover zoom effect */
+.project-image:hover img {
+  transform: scale(1.05);
+}
+
+/* ================= CONTENT ================= */
+
+.project-content {
+  flex: 1;
+}
+
+.project-content h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #ff0057;
+}
+
+.project-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #cbd5e1;
+}
+
+/* ================= TECH STACK ================= */
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.tech-stack span {
+  padding: 6px 14px;
+  background: #1e293b;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+/* ================= BUTTONS ================= */
+
+.project-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.live {
+  background: #00f2ff;
+  color: black;
+}
+
+.code {
+  border: 1px solid #ff0057;
+  color: #ff0057;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* ================= TABLET RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+
+  .project-card,
+  .project-card.reverse {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .project-image {
+    width: 100%;
+    height: 260px;
+  }
+
+  .project-buttons {
+    justify-content: center;
+  }
+
+  .tech-stack {
+    justify-content: center;
+  }
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 600px) {
+
+  #project {
+    padding: 70px 5%;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .project-content h2 {
+    font-size: 22px;
+  }
+
+  .project-image {
+    height: 200px;
+  }
+
+  .project-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //=======SKILLLS SECTION======//
+
+
+.skills-box{
+  width:100%;
+  padding:40px;
+  text-align:center;
+}
+
+.skills-title{
+  color:#00f7ff;
+  font-size:40px;
+  margin-bottom:40px;
+}
+
+.skills-icons{
+  display:grid;
+  grid-template-columns: repeat(5, 1fr); 
+  gap:30px;
+  width:100%;
+}
+
+.skill-icon{
+  background:#3f4041;
+  padding:20px;
+  border-radius:15px;
+  text-align:center;
+  transition:0.3s;
+}
+
+.skill-icon img{
+  width:50px;
+  height:50px;
+  margin-bottom:10px;
+}
+
+.skill-icon span{
+  color:white;
+  font-size:14px;
+}
+
+.skill-icon:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 20px #00f7ff;
+}
+@media (max-width: 1024px){
+  .skills-icons{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media (max-width: 768px){
+  .skills-icons{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills-title{
+    font-size:30px;
+  }
+}
+
+
+@media (max-width: 480px){
+  .skills-icons{
+    grid-template-columns: 1fr;
+  }
+
+  .skills-box{
+    padding:20px;
+  }
+
+  .skill-icon{
+    padding:15px;

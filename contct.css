@@ -1,0 +1,160 @@
+/* ================= CONTACT SECTION ================= */
+
+#contact {
+  width: 100%;
+  padding: 100px 6%;
+  /* background: linear-gradient(135deg, #0f172a, #1e293b); */
+  color: white;
+}
+
+.contact-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 42px;
+  color: #00f2ff;
+  margin-bottom: 10px;
+}
+
+.contact-subtitle {
+  text-align: center;
+  color: #cbd5e1;
+  margin-bottom: 70px;
+}
+
+/* ================= CONTAINER ================= */
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  align-items: center;
+}
+
+/* ================= LEFT SIDE ================= */
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ff0057;
+}
+
+.contact-info p {
+  color: #cbd5e1;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.info-box {
+  margin-bottom: 15px;
+}
+
+.info-box span {
+  font-weight: bold;
+  color: #00f2ff;
+}
+
+/* ================= FORM ================= */
+
+.contact-form {
+  flex: 1;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(15px);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 242, 255, 0.2);
+}
+
+/* Floating input */
+
+.input-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 14px;
+  background: transparent;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  color: white;
+  outline: none;
+  resize: none;
+}
+
+.input-group label {
+  position: absolute;
+  left: 15px;
+  top: 14px;
+  color: #94a3b8;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+/* Floating animation */
+.input-group input:focus + label,
+.input-group input:valid + label,
+.input-group textarea:focus + label,
+.input-group textarea:valid + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  background: #0f172a;
+  padding: 0 5px;
+  color: #00f2ff;
+}
+
+/* ================= BUTTON ================= */
+
+.send-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(45deg, #00f2ff, #ff0057);
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px #00f2ff;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  #contact {
+    padding: 70px 5%;
+  }
+
+  .contact-title {
+    font-size: 30px;
+  }
+
+}
